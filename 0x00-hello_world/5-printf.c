@@ -2,7 +2,7 @@
 /**
 *main - Entry point
 *
-*Description: A C program that prints with put function
+*Description: printing a string
 *
 * Return: Always 0 (success)
 */
