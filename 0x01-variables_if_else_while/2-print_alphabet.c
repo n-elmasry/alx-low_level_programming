@@ -9,12 +9,12 @@
 */
 int main(void)
 {
-int c = 'a';
-int x = tolower(c);
+char c;
 
-for (int c = 'a'; c <= 'z'; c++)
+for (c = 'a'; c <= 'z'; c++)
 {
-	putchar(x);
-	return (0);
+	putchar(c)
 }
+putchar('\n');
+return (0);
 }
