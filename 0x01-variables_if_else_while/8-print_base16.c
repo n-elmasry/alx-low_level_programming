@@ -7,18 +7,16 @@
 */
 int main(void)
 {
-int n;
-char x;
+int x;
+char c;
 
-for (n = 0; n >= 9; n++)
-{
-putchar((n % 10) + '0');
-}
+for (x = 0; x < 10; x++)
+putchar((x % 10) + '0');
 
-for (x = 'a'; x <= 'f'; x++)
-{
-putchar(x);
-}
+for (c = 'a'; c <= 'f'; c++)
+putchar(c);
+
 putchar('\n');
+
 return (0);
 }
