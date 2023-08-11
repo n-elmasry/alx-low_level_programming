@@ -12,8 +12,9 @@ char x;
 
 for (n = 0; n >= 9; n++)
 {
-putchar(n + '0');
+putchar((n % 10) + '0');
 }
+
 for (x = 'a'; x <= 'f'; x++)
 {
 putchar(x);
