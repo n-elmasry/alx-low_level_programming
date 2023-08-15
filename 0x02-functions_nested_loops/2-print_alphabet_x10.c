@@ -15,7 +15,7 @@ int c, i;
 for (c = 'a'; c <= 'z'; c++)
 {
 for (i = 0; i < 10; i++)
-putchar(c);
+_putchar(c);
 }
 _putchar ('\n');
 }
