@@ -4,16 +4,12 @@
 *_isalpha - checks for alphabetic character
 *
 *Description: checks for alphabetic character
-* Return: Always 0 (success)
+* Return: 1 if character is letter,, 0 otherwise.
 */
-
 int _isalpha(int c)
 {
-int c;
-
-if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-{
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 return (1);
-}
+else
 return (0);
 }
