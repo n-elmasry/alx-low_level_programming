@@ -6,12 +6,11 @@
 *Description: checks for alphabetic character
 * Return: Always 0 (success)
 */
+
 int _isalpha(int c)
 {
-
-if (c >= 'A' && c <= 'Z')
+if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 {
-if (c >= 'a' && c <= 'z')
 return (1);
 }
 return (0);
