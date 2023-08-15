@@ -9,15 +9,8 @@
 
 int _islower(int c)
 {
-
-int i, c == 'c';
-
-for (i = 'a'; i <= 'z'; i++)
-{
-for (i = 'c')
-{
+if (c >= 'a' && c <= 'z')
 return (1);
-}
+else
 return (0);
-}
 }
