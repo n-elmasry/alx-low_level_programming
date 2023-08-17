@@ -10,12 +10,11 @@
 int _isupper(int c)
 {
 
-if (c = 'A'; c <= 'Z'; c++)
+while (c = 65; c <= 90; c++)
 {
 return (1);
 }
-else
-{
+
 return (0);
 }
-}
+
