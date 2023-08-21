@@ -2,17 +2,24 @@
 
 /**
 *print_rev - prints a string, in reverse
-*@s:string printed
-*Description:  prints a string, in reverse
+*@s: string
+*Description: prints a string, in reverse
 * Return: s
 */
 
 void print_rev(char *s)
 {
+int i = 0;
 
-for (; *s = ('\0'); s--)
+while (s[i] != '\0')
 {
-_putchar(*s);
+c++;
+}
+
+for (i -= 1; c >= 0; c--)
+{
+_putchar(s[c]);
 }
 _putchar('\n');
+
 }
