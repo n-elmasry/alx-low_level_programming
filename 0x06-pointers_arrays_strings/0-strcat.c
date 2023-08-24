@@ -14,16 +14,14 @@ int i, j;
 
 while (dest[i])
 {
-_putchar(i);
+i++;
+}
+
+for (j = 0; src[j] != 0; j++)
+{
+dest[i] = src[j];
 i++;
 }
 _putchar('\0');
-
-while (src[j])
-{
-_putchar(j);
-j++;
-}
-
 return (dest);
 }
