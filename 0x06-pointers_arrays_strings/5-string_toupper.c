@@ -2,6 +2,7 @@
 
 /**
 *string_toupper - changes all lowercase letters of a string to uppercase
+*@s: array of string
 *Description: changes all lowercase letters of a string to uppercase
 * Return: 0
 */
@@ -11,7 +12,7 @@ char *string_toupper(char *s)
 
 int i = 0;
 
-while(s[i])
+while (s[i])
 {
 
 if (s[i] >= 'a' && s[i] <= 'z')
