@@ -15,11 +15,11 @@ int i = 0, j = 0;
 
 if (s2[j] < s1[i])
 {
-return (15);
+return (*s1 - *s2);
 }
 else if (s1[i] < s2[j])
 {
-return (-15);
+return (*s1 - *s2);
 }
 else
 {
