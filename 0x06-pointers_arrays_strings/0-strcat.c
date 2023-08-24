@@ -2,9 +2,9 @@
 
 /**
 *_strcat - concatenates two strings
-*@dest: destination string
+*@dest: detination string
 *@src: source string
-*Description: concatenates two strings
+*Description: concatenates two strings.
 * Return: dest
 */
 char *_strcat(char *dest, char *src)
@@ -22,6 +22,6 @@ for (j = 0; src[j] != 0; j++)
 dest[i] = src[j];
 i++;
 }
-_putchar('\0');
+dest[i] = '\0';
 return (dest);
 }
