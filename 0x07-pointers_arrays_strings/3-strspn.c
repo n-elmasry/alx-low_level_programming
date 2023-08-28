@@ -15,7 +15,7 @@ unsigned int i, n = 0;
 
 for (i = 0; s[i] != '\0' && strchr(accept, s[i]) != NULL; i++)
 {
-n = n +1 ;
+n = n + 1;
 }
 return (n);
 
