@@ -10,13 +10,13 @@ if (y * y == x)
 {
 return (y);
 }
-else if (y * y > x )
+else if (y * y > x)
 {
 return (-1);
 }
 else
 {
-return (_sqrt (x, y +1));
+return (_sqrt(x, y +1));
 }
 }
 
