@@ -16,6 +16,6 @@ return (1);
 }
 y = atoi(argv[2]);
 x = atoi(argv[1]);
-printf("%d\n", y * x);
+printf("%d\n", y *x);
 return (0);
 }
