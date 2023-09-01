@@ -1,16 +1,18 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-#define UNUSED(x) (void)(x)
+#include <stdlib.h>
 /**
-*main -  prints its name, followed by a new line.
+*main -  prints all arguments it receives.
 *@argc:  the number of arguments on the command line.
 *@argv: array of character pointers listing all the arguments
 *Return: 0
 */
 int main(int argc, char *argv[])
 {
-	 UNUSED(argc);
-	printf("%s \n", argv[0]);
-return (0);
+int i;
+for (i = 0; i < argc; i++)
+{
+printf("%s\n", argv[i]);
+}
+return(0);
 }
