@@ -1,9 +1,11 @@
 #include <stdio.h>
 /**
 *main -  prints its name, followed by a new line.
-* Return: 0
+*@argc:  the number of arguments on the command line.
+*@argv: array of character pointers listing all the arguments
+*Return: 0
 */
-int main (int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 int i;
 
