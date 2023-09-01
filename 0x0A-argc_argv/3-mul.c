@@ -8,14 +8,15 @@
 */
 int main(int argc, char *argv[])
 {
-	int x, y;
-if (argc < 2)
+	int x, y, mult;
+if (argc < 3)
 {
 printf("Error\n");
 return (1);
 }
 y = atoi(argv[2]);
 x = atoi(argv[1]);
-printf("%d\n", y *x);
+mult = y * x;
+printf("%d\n", mult);
 return (0);
 }
