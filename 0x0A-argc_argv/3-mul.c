@@ -16,7 +16,8 @@ return (1);
 }
 y = atoi(argv[2]);
 x = atoi(argv[1]);
-mult = y * x;
+
+mult = (y *x);
 printf("%d\n", mult);
 return (0);
 }
