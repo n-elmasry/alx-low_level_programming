@@ -10,13 +10,14 @@ char *_strdup(char *str)
 {
 unsigned int i;
 char *ptr;
+int n = sizeof(str);
 
 if (str == NULL)
 {
 return (NULL);
 }
 
-ptr = malloc(sizeof(str));
+ptr = malloc(sizeof(char) * n);
 
 if (ptr == NULL)
 {
@@ -27,6 +28,5 @@ for (i = 0 ; i < sizeof(str); i++)
 {
 ptr[i] = str[i];
 }
-
 return (ptr);
 }
