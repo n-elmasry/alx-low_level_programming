@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdlib.h>
 /**
 *_calloc -  allocates memory for an array, using malloc.
@@ -22,5 +23,5 @@ if (ptr == NULL)
 return (NULL);
 }
 memset(ptr, 0, nmemb * size);
-return ();
+return (ptr);
 }
