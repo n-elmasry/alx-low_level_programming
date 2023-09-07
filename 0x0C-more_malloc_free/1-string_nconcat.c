@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
 /**
 *string_nconcat - concatenates two strings.
@@ -29,7 +28,7 @@ if (n >= len2)
 n = len2;
 }
 
-ptr = (char *)malloc(len1 + len2 + 1);
+ptr = (char *)malloc(len1 + n + 1);
 
 if (ptr == NULL)
 {
@@ -39,3 +38,4 @@ strcpy(ptr, s1);
 strncat(ptr, s2, n);
 return (ptr);
 }
+
