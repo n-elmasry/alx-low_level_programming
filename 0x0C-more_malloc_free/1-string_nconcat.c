@@ -11,7 +11,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *ptr;
-unsigned int i, len1, len2;
+unsigned int len1, len2;
 
 if (s1 == NULL)
 {
@@ -29,10 +29,7 @@ if (n >= len2)
 n = len2;
 }
 
-for (i = 0; i < n; i++)
-{
-ptr = (char *)malloc(len1 + len2 +1);
-}
+ptr = (char *)malloc(len1 + len2 + 1);
 
 if (ptr == NULL)
 {
@@ -40,6 +37,5 @@ return (NULL);
 }
 strcpy(ptr, s1);
 strncat(ptr, s2, n);
-
-return(ptr);
+return (ptr);
 }
