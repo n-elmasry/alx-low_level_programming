@@ -33,7 +33,6 @@ if (newmem == NULL)
 {
 return (NULL);
 }
-
 if (new_size < old_size)
 {
 csize = new_size;
