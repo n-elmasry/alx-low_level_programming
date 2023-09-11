@@ -15,8 +15,14 @@ char *name;
 float age;
 char *owner;
 };
-/**functions prototypes
- */
+/**
+*init_dog - Short description
+*@d: First member
+*@name: Second member
+*@age: age
+*@owner: woner
+* Description: Longer description
+*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 #endif
