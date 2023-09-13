@@ -3,7 +3,7 @@
 /**
 *print_name -  prints a name.
 *@name: name to be printed
-*@char: char to be printed
+*@f: pointer to cunction
 * Return: void
 */
 
