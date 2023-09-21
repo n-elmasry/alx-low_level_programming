@@ -11,4 +11,3 @@ main:
     call printf            ; Call the printf function
     add rsp, 8              ; Restore the stack pointer
     ret
-
