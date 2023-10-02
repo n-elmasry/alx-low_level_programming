@@ -17,7 +17,7 @@ return (-1);
 
 file = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 if (file < 0)
-return (0);
+return (-1);
 
 if (text_content != NULL)
 {
