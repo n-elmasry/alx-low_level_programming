@@ -5,36 +5,36 @@
 *@letters: the number of letters it should read and print
 *Return: the actual number of letters it could read and print,or 0
 */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-FILE *file;
+int file;
 char *buffer;
-size_t read;
+size_t readl,  written;
 
 if (filename == NULL)
 return (0);
 
-file = fopen(filename, "r");
-if (file == NULL)
+file = open(filename, O_RDONLY);
+if (file < 0)
 return (0);
 
 buffer = malloc(letters + 1);
 if (buffer == NULL)
 {
-fclose(file);
+close(file);
 return (0);
 }
-read = fread(buffer, 1, letters, file);
-buffer[read] = '\0';
+readl = read(file, buffer, letters);
+buffer[readl] = '\0';
 
-if (read <= 0 || fwrite(buffer, 1, read, stdout) != read)
+written = write(STDOUT_FILENO, buffer, readl);
+if (written != readl)
 {
-fclose(file);
+close(file);
 free(buffer);
 return (0);
 }
-fclose(file);
+close(file);
 free(buffer);
-return (read);
+return (readl);
 }
