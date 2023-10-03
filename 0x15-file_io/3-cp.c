@@ -43,10 +43,5 @@ exit(99);
 }
 fclose(file_from);
 close(file_to);
-if (close(file_to) != 0)
-{
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
-exit(100);
-}
 return (0);
 }
