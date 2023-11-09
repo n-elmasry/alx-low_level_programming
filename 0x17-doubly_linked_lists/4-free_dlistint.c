@@ -7,10 +7,6 @@
 void free_dlistint(dlistint_t *head)
 {
 dlistint_t *curr = head;
-if (head == NULL)
-{
-exit(1);
-}
 
 while (curr->next != NULL)
 {
